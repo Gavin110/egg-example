@@ -4,6 +4,7 @@
   "description": "",
   "private": true,
   "dependencies": {
+    "cryptojs": "^2.5.3",
     "egg": "^2.2.1",
     "egg-mssql": "^1.0.2",
     "egg-mysql": "^3.0.0",

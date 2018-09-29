@@ -9,6 +9,7 @@ module.exports = app => {
   router.get('haha','/home/haha', controller.home.haha);
   router.get('/search', app.controller.search.index);
   router.get('/user/info', app.controller.user.info);
-  router.get('/wxlogin/getSessionkeyByCode', app.controller.wxlogin.getSessionkeyByCode);
+  // /:selfParams
+  router.get('/wxlogin/getUnionId', app.controller.wxlogin.getUnionId);
 
 };

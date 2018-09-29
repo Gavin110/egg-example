@@ -3,10 +3,10 @@
 const Controller = require('egg').Controller;
 
 class WxloginController extends Controller {
-    async getSessionkeyByCode() {
+    async getUnionId() {
         const ctx = this.ctx;
-        const user = await ctx.service.wxlogin.getSessonKeyByCode('0611jsdT0odUxX1VlyfT0wqbdT01jsdU');
-        this.ctx.body = 'hi, wxloginSuccess';
+        const userInfo = await ctx.service.wxlogin.getUnionId(ctx.query);
+        this.ctx.body = userInfo;
     }
 }
 
