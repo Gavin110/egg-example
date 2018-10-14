@@ -127,7 +127,8 @@ module.exports = app => {
       allowNull: true
     }
   }, {
-    tableName: 'bd_pro'
+    tableName: 'bd_pro',
+    timestamps: false
   });
 
   Model.associate = function() {

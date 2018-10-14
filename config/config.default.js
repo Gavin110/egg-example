@@ -11,23 +11,23 @@ module.exports = appInfo => {
 
     config.sequelize = {
         // support: mysql, mariadb, postgres, mssql
-        //SQLServer
-        dialect: 'mssql',
-        database: 'SYCP-TEST',
-        host: '47.94.197.132',
-        port: '1433',
-        username: 'sa',
-        password: systemConfig.sqlServerPassword,
-        //MySQL
-        // dialect: 'mysql',
-        // database: 'sycp',
-        // host: '122.152.214.215',
-        // port: '3306',
-        // username: 'root',
-        // password: systemConfig.mySqlPassword,
 
-        // 是否需要增加createdAt、updatedAt、deletedAt字段
-        timestamps: false,
+        //SQLServer
+        // dialect: 'mssql',
+        // database: 'SYCP-TEST',
+        // host: '47.94.197.132',
+        // port: '1433',
+        // username: 'sa',
+        // password: systemConfig.sqlServerPassword,
+
+        //MySQL
+        dialect: 'mysql',
+        database: 'sycp',
+        host: '122.152.214.215',
+        port: '3306',
+        username: 'root',
+        password: systemConfig.mySqlPassword,
+
     };
 
     config.mysql = {

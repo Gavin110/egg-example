@@ -11,7 +11,6 @@ WXBizDataCrypt.prototype.decryptData = function (encryptedData, iv) {
     var sessionKey = new Buffer(this.sessionKey, 'base64')
     encryptedData = new Buffer(encryptedData, 'base64')
     iv = new Buffer(iv, 'base64')
-    console.log("WXBizDataCrypt中的打印：：：：：：","WXBizDataCryptWXBizDataCryptWXBizDataCrypt");
 
     try {
         // 解密
