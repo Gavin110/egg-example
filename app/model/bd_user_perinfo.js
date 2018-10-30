@@ -54,11 +54,10 @@ module.exports = app => {
             type: DataTypes.TIME,
             allowNull: false,
             defaultValue: '0000-00-00 00:00:00'
-        },
-        created_at: DATE,
-        updated_at: DATE,
+        }
     }, {
-        tableName: 'bd_user_perinfo'
+        tableName: 'bd_user_perinfo',
+        timestamps: false,
     });
 
     Model.findAlllist = async () => {

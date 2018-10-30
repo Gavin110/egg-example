@@ -15,18 +15,34 @@ module.exports = appInfo => {
         //SQLServer
         // dialect: 'mssql',
         // database: 'SYCP-TEST',
-        // host: '47.94.197.132',
+        // host: systemConfig.hostByCP,
         // port: '1433',
         // username: 'sa',
         // password: systemConfig.sqlServerPassword,
 
-        //MySQL
+        //MySQL：sycp
+        // dialect: 'mysql',
+        // database: 'sycp',
+        // host: systemConfig.hostByME,
+        // port: '3306',
+        // username: 'root',
+        // password: systemConfig.mySqlPassword,
+
+        // //MySQL：raffle
         dialect: 'mysql',
-        database: 'sycp',
-        host: '122.152.214.215',
+        database: 'SYCP-TEST',
+        host: systemConfig.hostByME,
         port: '3306',
         username: 'root',
         password: systemConfig.mySqlPassword,
+
+        //MySQL：MZ_CONTENT_CLOUD
+        // dialect: 'mysql',
+        // database: 'MZ_CONTENT_CLOUD',
+        // host: systemConfig.hostByMZ,
+        // port: '9909',
+        // username: 'root',
+        // password: systemConfig.mzContentCloud,
 
     };
 
@@ -34,7 +50,7 @@ module.exports = appInfo => {
         // 单数据库信息配置
         client: {
             // host
-            host: '122.152.214.215',
+            host: systemConfig.hostByME,
             // 端口号
             port: '3306',
             // 用户名
@@ -42,7 +58,7 @@ module.exports = appInfo => {
             // 密码
             password: systemConfig.mySqlPassword,
             // 数据库名
-            database: 'SYCP',
+            database: 'SYCP-TEST',
         },
         // 是否加载到 app 上，默认开启
         app: true,
@@ -54,7 +70,7 @@ module.exports = appInfo => {
         // 单数据库信息配置
         client: {
             // host
-            server: '47.94.197.132',
+            server: systemConfig.hostByCP,
             // 端口号
             port: '1433',
             // 用户名
