@@ -35,6 +35,7 @@ module.exports = appInfo => {
         port: '3306',
         username: 'root',
         password: systemConfig.mySqlPassword,
+        operatorsAliases: false,
 
         //MySQL：MZ_CONTENT_CLOUD
         // dialect: 'mysql',
