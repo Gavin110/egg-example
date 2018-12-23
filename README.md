@@ -21,6 +21,7 @@ $ open http://localhost:7001/
 ```bash
 $ npm start
 $ npm stop
+$ 部署的时候需要在utils/路径下config，其涉及数据库相关配置，没有上传上去
 ```
 
 ### npm scripts
